@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button onclick="add()">Add</button>
+<button onclick="Display()">Display</button>
+<div id="result"></div>
+<script>
+    let Add = Array();
+    function add(){
+        Add.push(document.getElementById('input').value);
+        document.getElementById('input').value = '';
+    }
+    function Display(){
+        // for(let i = 0; i<=Add.length-1;i++){
+        //
+        // }
+        document.getElementById('result').innerHTML = Add;
+    }
+</script>
+</body>
+</html>
